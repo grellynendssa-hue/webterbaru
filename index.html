@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pengaduan Masyarakat Desa Leinitu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Pengaduan Masyarakat Desa Leinitu</h1>
+    <nav>
+      <a href="#form">Form Pengaduan</a>
+      <a href="admin.html">Login Admin</a>
+    </nav>
+  </header>
+
+  <section id="form">
+    <h2>Form Pengaduan</h2>
+    <form id="laporForm">
+      <label>Nama (opsional) <input type="text" name="nama"></label>
+      <label>Alamat/Dusun <input type="text" name="alamat" required></label>
+      <label>Kategori 
+        <select name="kategori" required>
+          <option>Infrastruktur</option>
+          <option>Pelayanan Publik</option>
+          <option>Sosial & Keamanan</option>
+        </select>
+      </label>
+      <label>Judul <input type="text" name="judul" required></label>
+      <label>Kronologi <textarea name="kronologi" required></textarea></label>
+      <button type="submit" class="btn">Kirim</button>
+    </form>
+    <div id="toast" hidden>✅ Laporan tersimpan</div>
+  </section>
+
+  <footer>
+    <p>© 2025 Desa Leinitu</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
